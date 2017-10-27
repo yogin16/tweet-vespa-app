@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <hosts>
 
-  <host name="ip-10-0-2-245.ec2.internal">
+  <host name="">
     <alias>node1</alias>
   </host>
 
-  <host name="ip-10-0-2-250.ec2.internal">
+  <host name="">
     <alias>node2</alias>
   </host>
 
-  <host name="ip-10-0-10-145.ec2.internal">
+  <host name="">
     <alias>node3</alias>
   </host>
 
-  <host name="ip-10-0-10-253.ec2.internal">
+  <host name="">
     <alias>node4</alias>
   </host>
 
