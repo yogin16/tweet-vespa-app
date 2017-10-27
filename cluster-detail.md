@@ -111,7 +111,7 @@ tmpfs            12G     0   12G   0% /run/user/5071
 ![CPU](https://github.com/yogin16/tweet-vespa-app/blob/master/images/cpu-with-no-queries.png)
 
 
-- htop on node1 when the aggregation query is running which times out.
+- htop on node1 when the *aggregation query is running* which times out.
 - Memory:
 ![Memory](https://github.com/yogin16/tweet-vespa-app/blob/master/images/mem-when-agg-running.png)
 - CPU: 
