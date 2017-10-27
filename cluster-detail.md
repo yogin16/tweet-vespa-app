@@ -116,3 +116,7 @@ tmpfs            12G     0   12G   0% /run/user/5071
 ![Memory](https://github.com/yogin16/tweet-vespa-app/blob/master/images/mem-when-agg-running.png)
 - CPU: 
 ![CPU](https://github.com/yogin16/tweet-vespa-app/blob/master/images/cpu-when-agg-running.png)
+
+### Observation:
+- The query is utilizing only one core. How to make a query run on multiple core. Out of 16 only 1 core getting 100% CPU.
+- Not much spike on memory 
