@@ -105,9 +105,14 @@ tmpfs            12G     0   12G   0% /run/user/5071
 ## htop
 
 - This is htop on node1 when no query is running on cluster:
+- Memory:
 ![Memory](https://github.com/yogin16/tweet-vespa-app/blob/master/images/mem-with-no-queries.png)
+- CPU:
 ![CPU](https://github.com/yogin16/tweet-vespa-app/blob/master/images/cpu-with-no-queries.png)
 
+
 - htop on node1 when the aggregation query is running which times out.
+- Memory:
 ![Memory](https://github.com/yogin16/tweet-vespa-app/blob/master/images/mem-when-agg-running.png)
+- CPU: 
 ![CPU](https://github.com/yogin16/tweet-vespa-app/blob/master/images/cpu-when-agg-running.png)
