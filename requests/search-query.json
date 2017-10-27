@@ -1,0 +1,636 @@
+curl 'http://localhost:8080/search/?yql=select%20*%20from%20sources%20*%20where%20sddocname%20contains%20%22tweet%22%3B' | python -m json.tool
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  9111  100  9111    0     0  11710      0 --:--:-- --:--:-- --:--:-- 11710
+{
+    "root": {
+        "children": [
+            {
+                "fields": {
+                    "add_gsOrd": 63728,
+                    "add_obUId": 143132365,
+                    "add_obUSN": "NYCEMSwatch",
+                    "add_obtId": "815341001208430593",
+                    "documentid": "id:firehose:tweet::815365632254427136",
+                    "e_u": [
+                        {
+                            "d": "Gunmen dressed as Santas have attacked a night club in Istanbul, reportedly killing and injuring scores of people, Turkish media report. Footage shows armored police vehicles surrounding the building as ambulances are rushed to the scene.",
+                            "eU": "https://www.rt.com/news/372394-istanbul-night-club-newyear-attack/",
+                            "oU": "https://t.co/gKbNNt1hTi",
+                            "t": "At least 35 killed, 40 injured in Istanbul nightclub terrorist attack \u2013 governor \u2014 RT News"
+                        }
+                    ],
+                    "foC": 316,
+                    "frC": 1860,
+                    "g": 0,
+                    "l": {
+                        "c": "US",
+                        "g": [
+                            {
+                                "coordinates": [
+                                    -73.86641,
+                                    40.84985000000001
+                                ],
+                                "type": "point"
+                            }
+                        ]
+                    },
+                    "ln": "en",
+                    "m": "It is 2017 in Istanbul &amp; terror rings in the new year as gunmen attack a night club. People dead, lots of wounded. https://t.co/gKbNNt1hTi",
+                    "mTp": 8,
+                    "n_c_p": [],
+                    "n_tA_c": [
+                        "2017",
+                        "istanbul",
+                        "&amp",
+                        "terror",
+                        "rings",
+                        "gunmen",
+                        "attack",
+                        "club",
+                        "people",
+                        "dead",
+                        "lots",
+                        "wounded"
+                    ],
+                    "n_tA_s": [
+                        "https",
+                        ":",
+                        "/",
+                        "www",
+                        ".",
+                        "rt",
+                        "com",
+                        "news",
+                        "372394",
+                        "-",
+                        "istanbul",
+                        "night",
+                        "club",
+                        "newyear",
+                        "attack",
+                        "@nycemswatch",
+                        "nycemswatch"
+                    ],
+                    "n_tA_tC": [],
+                    "sN": "PipoVela",
+                    "sT_dlC": 0,
+                    "sT_fC": 0,
+                    "sT_lAT": 0,
+                    "sT_qC": 0,
+                    "sT_r": 0.0,
+                    "sT_rC": 316,
+                    "sT_rpC": 0,
+                    "sT_rtC": 0,
+                    "sT_vC": 0,
+                    "sddocname": "tweet",
+                    "t": 1483233290147,
+                    "u": 304758118,
+                    "v": "false"
+                },
+                "id": "id:firehose:tweet::815365632254427136",
+                "relevance": 0.0,
+                "source": "content-root-cluster"
+            },
+            {
+                "fields": {
+                    "add_gsOrd": 22634,
+                    "documentid": "id:firehose:tweet::815347045498241026",
+                    "foC": 451,
+                    "frC": 350,
+                    "g": 0,
+                    "l": {
+                        "c": "GB",
+                        "g": [
+                            {
+                                "coordinates": [
+                                    -0.12574,
+                                    51.50853
+                                ],
+                                "type": "point"
+                            }
+                        ]
+                    },
+                    "ln": "en",
+                    "m": "Happy New Year, everyone. Time to fight back.",
+                    "mTp": 2,
+                    "n_c_p": [],
+                    "n_tA_c": [
+                        "happy",
+                        "time",
+                        "fight"
+                    ],
+                    "n_tA_s": [],
+                    "n_tA_tC": [],
+                    "sN": "LondonerAlex",
+                    "sT_dlC": 0,
+                    "sT_fC": 0,
+                    "sT_lAT": 0,
+                    "sT_qC": 0,
+                    "sT_r": 0.0,
+                    "sT_rC": 451,
+                    "sT_rpC": 0,
+                    "sT_rtC": 0,
+                    "sT_vC": 0,
+                    "sddocname": "tweet",
+                    "t": 1483228858719,
+                    "u": 2182821368,
+                    "v": "false"
+                },
+                "id": "id:firehose:tweet::815347045498241026",
+                "relevance": 0.0,
+                "source": "content-root-cluster"
+            },
+            {
+                "fields": {
+                    "add_gsOrd": 63728,
+                    "documentid": "id:firehose:tweet::815347044046864389",
+                    "foC": 88,
+                    "frC": 88,
+                    "g": 0,
+                    "l": {
+                        "n": "\u6771\u30b7\u30ca\u6d77\u306e\u3072\u3083\u304f\u3081\u30fc\u3068\u308b\u3057\u305f"
+                    },
+                    "ln": "und",
+                    "m": "https://t.co/Q2IWws8TAH",
+                    "mD": [
+                        {
+                            "dU": "pic.twitter.com/Q2IWws8TAH",
+                            "eU": "https://twitter.com/tara_noegg/status/815347044046864389/photo/1",
+                            "i": [
+                                0,
+                                23
+                            ],
+                            "mT": 2,
+                            "mU": "https://pbs.twimg.com/media/C1CxzaFVQAACOVJ.jpg",
+                            "t": "PHOTO",
+                            "u": "https://t.co/Q2IWws8TAH"
+                        }
+                    ],
+                    "mTp": 2,
+                    "n_c_p": [],
+                    "n_tA_c": [],
+                    "n_tA_s": [],
+                    "n_tA_tC": [],
+                    "sN": "tara_noegg",
+                    "sT_dlC": 0,
+                    "sT_fC": 0,
+                    "sT_lAT": 0,
+                    "sT_qC": 0,
+                    "sT_r": 0.0,
+                    "sT_rC": 88,
+                    "sT_rpC": 0,
+                    "sT_rtC": 0,
+                    "sT_vC": 0,
+                    "sddocname": "tweet",
+                    "t": 1483228858373,
+                    "u": 784357193017544704,
+                    "v": "false"
+                },
+                "id": "id:firehose:tweet::815347044046864389",
+                "relevance": 0.0,
+                "source": "content-root-cluster"
+            },
+            {
+                "fields": {
+                    "add_gsOrd": 63664,
+                    "documentid": "id:firehose:tweet::815365337734664192",
+                    "foC": 1839,
+                    "frC": 1512,
+                    "g": 0,
+                    "l": {
+                        "c": "NL",
+                        "g": [
+                            {
+                                "coordinates": [
+                                    5.75,
+                                    52.5
+                                ],
+                                "type": "point"
+                            }
+                        ]
+                    },
+                    "ln": "pl",
+                    "m": "\u015bpijcie dobrze mi\u015bki i wszystkiego najjj w tym jak\u017ce wspania\u0142ym roku (trzeba wykraka\u0107, \u017ce b\u0119dzie \u015bwietny) &gt;&gt;&gt;&gt;&gt;&gt;",
+                    "mTp": 2,
+                    "n_c_p": [],
+                    "n_tA_c": [
+                        "\u015bpijcie",
+                        "mi\u015bki",
+                        "wszystkiego",
+                        "najjj",
+                        "jak\u017ce",
+                        "wspania\u0142ym",
+                        "wykraka\u0107",
+                        "\u015bwietny",
+                        "&gt",
+                        "&gt",
+                        "&gt",
+                        "&gt",
+                        "&gt",
+                        "&gt"
+                    ],
+                    "n_tA_s": [],
+                    "n_tA_tC": [],
+                    "sN": "cutedaddarioboy",
+                    "sT_dlC": 0,
+                    "sT_fC": 0,
+                    "sT_lAT": 0,
+                    "sT_qC": 0,
+                    "sT_r": 0.0,
+                    "sT_rC": 1839,
+                    "sT_rpC": 0,
+                    "sT_rtC": 0,
+                    "sT_vC": 0,
+                    "sddocname": "tweet",
+                    "t": 1483233219928,
+                    "u": 2825720085,
+                    "v": "false"
+                },
+                "id": "id:firehose:tweet::815365337734664192",
+                "relevance": 0.0,
+                "source": "content-root-cluster"
+            },
+            {
+                "fields": {
+                    "add_gsOrd": 63829,
+                    "add_obUId": 800373219924398081,
+                    "add_obUSN": "dreamforyoung",
+                    "add_obtId": "815070923682258944",
+                    "documentid": "id:firehose:tweet::815360073870426112",
+                    "foC": 299,
+                    "frC": 110,
+                    "g": 0,
+                    "l": {
+                        "n": "@BITTO_TOPTH \u2661"
+                    },
+                    "ln": "ko",
+                    "m": "\ud83c\udf3b\n#UP10TION #\uc5c5\ud150\uc158 #BURST #\ud558\uc597\uac8c_\ubd88\ud0dc\uc6e0\uc5b4 #\uaddc\uc9c4 #GYUJIN #\ud55c\uaddc\uc9c4 \n161231 \ud56b\ubc31 \uc774\ubca4\ud2b8 https://t.co/srR1cFYj21",
+                    "mD": [
+                        {
+                            "dU": "pic.twitter.com/srR1cFYj21",
+                            "eU": "https://twitter.com/dreamforyoung/status/815070923682258944/photo/1",
+                            "i": [
+                                66,
+                                89
+                            ],
+                            "mT": 2,
+                            "mU": "https://pbs.twimg.com/media/C0-2rE6UkAA0GXK.jpg",
+                            "t": "PHOTO",
+                            "u": "https://t.co/srR1cFYj21"
+                        }
+                    ],
+                    "mTp": 8,
+                    "n_c_p": [],
+                    "n_tA_c": [
+                        "\ud558\uc597\uac8c",
+                        "\ubd88\ud0dc\uc6e0\uc5b4",
+                        "\uaddc\uc9c4",
+                        "161231",
+                        "\ud56b\ubc31",
+                        "\uc774\ubca4\ud2b8",
+                        "#up10tion",
+                        "#burst",
+                        "#gyujin",
+                        "#\uc5c5\ud150\uc158",
+                        "#\ud558\uc597\uac8c_\ubd88\ud0dc\uc6e0\uc5b4",
+                        "#\uaddc\uc9c4",
+                        "#\ud55c\uaddc\uc9c4"
+                    ],
+                    "n_tA_s": [
+                        "rt",
+                        "@dreamforyoung",
+                        "dreamforyoung"
+                    ],
+                    "n_tA_tC": [],
+                    "sN": "Gyujin_TOPTH",
+                    "sT_dlC": 0,
+                    "sT_fC": 0,
+                    "sT_lAT": 0,
+                    "sT_qC": 0,
+                    "sT_r": 0.0,
+                    "sT_rC": 299,
+                    "sT_rpC": 0,
+                    "sT_rtC": 0,
+                    "sT_vC": 0,
+                    "sddocname": "tweet",
+                    "t": 1483231964925,
+                    "t_e": {
+                        "h": [
+                            {
+                                "i": [
+                                    3,
+                                    12
+                                ],
+                                "t": "UP10TION"
+                            },
+                            {
+                                "i": [
+                                    13,
+                                    17
+                                ],
+                                "t": "\uc5c5\ud150\uc158"
+                            },
+                            {
+                                "i": [
+                                    18,
+                                    24
+                                ],
+                                "t": "BURST"
+                            },
+                            {
+                                "i": [
+                                    25,
+                                    34
+                                ],
+                                "t": "\ud558\uc597\uac8c_\ubd88\ud0dc\uc6e0\uc5b4"
+                            },
+                            {
+                                "i": [
+                                    35,
+                                    38
+                                ],
+                                "t": "\uaddc\uc9c4"
+                            },
+                            {
+                                "i": [
+                                    39,
+                                    46
+                                ],
+                                "t": "GYUJIN"
+                            },
+                            {
+                                "i": [
+                                    47,
+                                    51
+                                ],
+                                "t": "\ud55c\uaddc\uc9c4"
+                            }
+                        ]
+                    },
+                    "u": 3430635183,
+                    "v": "false"
+                },
+                "id": "id:firehose:tweet::815360073870426112",
+                "relevance": 0.0,
+                "source": "content-root-cluster"
+            },
+            {
+                "fields": {
+                    "add_gsOrd": 63728,
+                    "add_obUId": 2519384734,
+                    "add_obUSN": "ripleytwt",
+                    "add_obtId": "815101577237184513",
+                    "documentid": "id:firehose:tweet::815347042092400641",
+                    "foC": 1619,
+                    "frC": 104,
+                    "g": 0,
+                    "ln": "ko",
+                    "m": "\ubc14\ub2e4 \uc9f1 \u314b\u314b\u314b https://t.co/dpio8E0k3c",
+                    "mD": [
+                        {
+                            "dU": "pic.twitter.com/dpio8E0k3c",
+                            "eU": "https://twitter.com/ripleytwt/status/815101577237184513/photo/1",
+                            "i": [
+                                9,
+                                32
+                            ],
+                            "mT": 2,
+                            "mU": "https://pbs.twimg.com/media/C0_SfFWUoAEp4Is.jpg",
+                            "t": "PHOTO",
+                            "u": "https://t.co/dpio8E0k3c"
+                        },
+                        {
+                            "dU": "pic.twitter.com/dpio8E0k3c",
+                            "eU": "https://twitter.com/ripleytwt/status/815101577237184513/photo/1",
+                            "i": [
+                                9,
+                                32
+                            ],
+                            "mT": 2,
+                            "mU": "https://pbs.twimg.com/media/C0_SgQbVIAQWOG8.jpg",
+                            "t": "PHOTO",
+                            "u": "https://t.co/dpio8E0k3c"
+                        }
+                    ],
+                    "mTp": 8,
+                    "n_c_p": [],
+                    "n_tA_c": [
+                        "\ubc14\ub2e4",
+                        "\uc9f1",
+                        "\u314b\u314b\u314b"
+                    ],
+                    "n_tA_s": [
+                        "rt",
+                        "@ripleytwt",
+                        "ripleytwt"
+                    ],
+                    "n_tA_tC": [],
+                    "sN": "thomincookie",
+                    "sT_dlC": 0,
+                    "sT_fC": 0,
+                    "sT_lAT": 0,
+                    "sT_qC": 0,
+                    "sT_r": 0.0,
+                    "sT_rC": 1619,
+                    "sT_rpC": 0,
+                    "sT_rtC": 0,
+                    "sT_vC": 0,
+                    "sddocname": "tweet",
+                    "t": 1483228857907,
+                    "u": 1675965932,
+                    "v": "false"
+                },
+                "id": "id:firehose:tweet::815347042092400641",
+                "relevance": 0.0,
+                "source": "content-root-cluster"
+            },
+            {
+                "fields": {
+                    "add_gsOrd": 63829,
+                    "documentid": "id:firehose:tweet::815347042784608256",
+                    "foC": 21,
+                    "frC": 164,
+                    "g": 0,
+                    "ln": "und",
+                    "m": "https://t.co/EUB1kLM80o",
+                    "mD": [
+                        {
+                            "dU": "pic.twitter.com/EUB1kLM80o",
+                            "eU": "https://twitter.com/Pinappljuzzy1/status/815347042784608256/photo/1",
+                            "i": [
+                                0,
+                                23
+                            ],
+                            "mT": 2,
+                            "mU": "https://pbs.twimg.com/media/C1Cxz3QW8AAaUbw.jpg",
+                            "t": "PHOTO",
+                            "u": "https://t.co/EUB1kLM80o"
+                        }
+                    ],
+                    "mTp": 2,
+                    "n_c_p": [],
+                    "n_tA_c": [],
+                    "n_tA_s": [],
+                    "n_tA_tC": [],
+                    "sN": "Pinappljuzzy1",
+                    "sT_dlC": 0,
+                    "sT_fC": 0,
+                    "sT_lAT": 0,
+                    "sT_qC": 0,
+                    "sT_r": 0.0,
+                    "sT_rC": 21,
+                    "sT_rpC": 0,
+                    "sT_rtC": 0,
+                    "sT_vC": 0,
+                    "sddocname": "tweet",
+                    "t": 1483228858072,
+                    "u": 787261979194957824,
+                    "v": "false"
+                },
+                "id": "id:firehose:tweet::815347042784608256",
+                "relevance": 0.0,
+                "source": "content-root-cluster"
+            },
+            {
+                "fields": {
+                    "add_gsOrd": 63829,
+                    "documentid": "id:firehose:tweet::815347044806115328",
+                    "foC": 1552,
+                    "frC": 367,
+                    "g": 0,
+                    "l": {
+                        "n": "IX"
+                    },
+                    "ln": "en",
+                    "m": "new years resolution is to stick with art so i can be proud of my improvement by this time 1 year from now and not give up on drawing again",
+                    "mTp": 2,
+                    "n_c_p": [],
+                    "n_tA_c": [
+                        "years",
+                        "resolution",
+                        "stick",
+                        "art",
+                        "improvement",
+                        "time",
+                        "drawing"
+                    ],
+                    "n_tA_s": [],
+                    "n_tA_tC": [],
+                    "sN": "arimatronic",
+                    "sT_dlC": 0,
+                    "sT_fC": 0,
+                    "sT_lAT": 0,
+                    "sT_qC": 0,
+                    "sT_r": 0.0,
+                    "sT_rC": 1552,
+                    "sT_rpC": 0,
+                    "sT_rtC": 0,
+                    "sT_vC": 0,
+                    "sddocname": "tweet",
+                    "t": 1483228858554,
+                    "u": 2938639591,
+                    "v": "false"
+                },
+                "id": "id:firehose:tweet::815347044806115328",
+                "relevance": 0.0,
+                "source": "content-root-cluster"
+            },
+            {
+                "fields": {
+                    "add_gsOrd": 63829,
+                    "add_obUId": 235722145,
+                    "add_obUSN": "CamiloASilva7",
+                    "add_obtId": "815279176760651776",
+                    "documentid": "id:firehose:tweet::815377247808851968",
+                    "foC": 301,
+                    "frC": 488,
+                    "g": 0,
+                    "ln": "es",
+                    "m": "Cada a\u00f1o lo digo pero qu\u00e9 interesante que en Australia y algunos otros pa\u00edses ya es 2017",
+                    "mTp": 8,
+                    "n_c_p": [],
+                    "n_tA_c": [
+                        "interesante",
+                        "australia",
+                        "pa\u00edses",
+                        "2017"
+                    ],
+                    "n_tA_s": [
+                        "rt",
+                        "@camiloasilva7",
+                        "camiloasilva7"
+                    ],
+                    "n_tA_tC": [],
+                    "sN": "daniela_ruiz7",
+                    "sT_dlC": 0,
+                    "sT_fC": 0,
+                    "sT_lAT": 0,
+                    "sT_qC": 0,
+                    "sT_r": 0.0,
+                    "sT_rC": 301,
+                    "sT_rpC": 0,
+                    "sT_rtC": 0,
+                    "sT_vC": 0,
+                    "sddocname": "tweet",
+                    "t": 1483236059511,
+                    "u": 3779918659,
+                    "v": "false"
+                },
+                "id": "id:firehose:tweet::815377247808851968",
+                "relevance": 0.0,
+                "source": "content-root-cluster"
+            },
+            {
+                "fields": {
+                    "add_gsOrd": 63829,
+                    "documentid": "id:firehose:tweet::815347045032742912",
+                    "foC": 467,
+                    "frC": 315,
+                    "g": 0,
+                    "ln": "en",
+                    "m": "ya girl just wants some fried rice",
+                    "mTp": 2,
+                    "n_c_p": [],
+                    "n_tA_c": [
+                        "girl",
+                        "fried",
+                        "rice"
+                    ],
+                    "n_tA_s": [],
+                    "n_tA_tC": [],
+                    "sN": "long_delaney1",
+                    "sT_dlC": 0,
+                    "sT_fC": 0,
+                    "sT_lAT": 0,
+                    "sT_qC": 0,
+                    "sT_r": 0.0,
+                    "sT_rC": 467,
+                    "sT_rpC": 0,
+                    "sT_rtC": 0,
+                    "sT_vC": 0,
+                    "sddocname": "tweet",
+                    "t": 1483228858608,
+                    "u": 377606303,
+                    "v": "false"
+                },
+                "id": "id:firehose:tweet::815347045032742912",
+                "relevance": 0.0,
+                "source": "content-root-cluster"
+            }
+        ],
+        "coverage": {
+            "coverage": 100,
+            "documents": 66308891,
+            "full": true,
+            "nodes": 0,
+            "results": 1,
+            "resultsFull": 1
+        },
+        "fields": {
+            "totalCount": 66308891
+        },
+        "id": "toplevel",
+        "relevance": 1.0
+    }
+}
