@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<services version='1.0'>
+
+  <!-- admin -->
+  <admin version="2.0">
+    <adminserver hostalias="node1"/>
+
+    <cluster-controllers standalone-zookeeper="false">
+      <cluster-controller hostalias="node1"/>
+      <cluster-controller hostalias="node2"/>
+    </cluster-controllers>
+
+    <configservers>
+      <configserver hostalias="node1"/>
+      <configserver hostalias="node2"/>
+    </configservers>
+
+    <slobroks>
+      <slobrok hostalias="node1" index="1"/>
+      <slobrok hostalias="node2" index="2"/>
+    </slobroks>
+
+  <!--
+       not setting up file-distribution
+       http://docs.vespa.ai/documentation/cloudconfig/file-distribution.html
+  -->
+  </admin>
+
+  <!-- setup content cluster -->
+  <content id="content-root-cluster" version="1.0">
+
+    <!--
+         1. selection
+         not setting up docselector. default cluster. this otherwise could
+         be a very handy feature where a node can be made 'sticky'
+         to criteria, implying we can have criteria based nodes on-the-fly
+         that can clean out spurious data by themselves. a true elastic cluster.
+
+         http://docs.vespa.ai/documentation/reference/document-select-language.html
+         
+         2. garbage-collection and garbage-collection-interval are spurious
+         for homogeneous content
+         Relevant only if multiple doctype are index in this cluster
+         when data movement might cause content noise that can be cleared regularly
+    -->
+    <documents>
+      <document mode="index" type="tweet"/>
+    </documents>
+
+    <redundancy>2</redundancy>
+
+    <nodes>
+      <node hostalias="node1" distribution-key="0"/>
+      <node hostalias="node2" distribution-key="1"/>
+      <node hostalias="node3" distribution-key="2"/>
+      <node hostalias="node4" distribution-key="3"/>
+    </nodes>
+
+    <!-- nodes not arranged in hierarchical layout. group and nodes are mutually exclusive
+    <group/>
+    -->
+
+    <engine>
+      <proton>
+        <searchable-copies>2</searchable-copies>
+        <flush-on-shutdown>true</flush-on-shutdown>
+      </proton>
+    </engine>
+
+    <search>
+      <!-- default 5.0. if used here, you can't use request param timeout-->
+      <query-timeout>20.0</query-timeout>
+      
+      <visibility-delay>0</visibility-delay>
+      <!-- not configuring coverage:
+           minimum: min coverage required before returning results. default 1: full coverage.
+           min-wait: minimum time for a query to wait for full coverage once the declared
+                     minimum has been reached.
+                     default 0 - return as soon as the minimum
+                     coverage has been reached, and the remaining search nodes appear to be lagging.
+           max-wait: default 1 - unless configured otherwise a query is allowed
+                     to wait its full timeout for full coverage even after reaching the minimum.
+      <converage>
+        <minimum>1</minumum>
+        <min-wait-after-coverage-factor></min-wait-after-coverage-factor>
+        <max-wait-after-coverage-factor></max-wait-after-coverage-factor>
+      </coverage>
+      -->
+    </search>
+
+    <!-- define multi-level structure of dispatchers (scatter-gather nodes) in cluster
+    <dispatch />
+    -->
+
+    <tuning>
+      <bucket-splitting max-documents="250000000" />
+      <distribution type="strict" />
+    </tuning>
+  </content>
+
+  <!-- container -->
+  <container id="container-root-cluster" version="1.0">
+    <search/>
+    <document-api/>
+    <nodes jvmargs="-XX:+PrintGCDetails -XX:+PrintGCTimeStamps" allocated-memory="50%">
+      <node hostalias="node1" />
+      <node hostalias="node2" />
+    </nodes>
+  </container>
+
+</services>

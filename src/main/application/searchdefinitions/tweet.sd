@@ -1,0 +1,373 @@
+search tweet {
+    document tweet {
+
+        struct sentimententity {
+            field p type string {
+                match: text
+            }
+            field t type string {
+                match: text
+            }
+            field l type string {
+                match: text
+            }
+            field s type double {
+            }
+        }
+
+        struct expandedurls {
+            field oU type string {
+                match: text
+            }
+            field eU type string {
+                match: text
+            }
+            field t type string {
+                match: text
+            }
+            field d type string {
+                match: text
+            }
+        }
+
+        struct media {
+            field u type string {
+                match: text
+            }
+            field mU type string {
+                match: text
+            }
+            field i type array<int> {}
+            field dU type string {
+                match: text
+            }
+            field eU type string {
+                match: text
+            }
+            field t type string {
+                match: text
+            }
+            field mT type byte {
+                match: text
+            }
+        }
+
+        struct entitymention {
+            field u type long {
+                match: text
+            }
+            field i type array<int> {}
+            field sN type string {
+                match: text
+            }
+        }
+
+        struct entityhashtag {
+            field i type array<int> {}
+            field t type string {
+                match: text
+            }
+        }
+
+        struct entity {
+            field m type array<entitymention> {
+                match: text
+            }
+            field h type array<entityhashtag> {
+                match: text
+            }
+        }
+
+        struct geolocation {
+            field type type string {
+                match: text
+            }
+            field coordinates type array<double> {
+            }
+        }
+
+        struct location {
+            field n type string {
+                match: text
+            }
+            field c type string {
+                match: text
+            }
+            field g type array<geolocation> {
+                match: text
+            }
+        }
+
+
+        field pId type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field u type long {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field sN type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field frC type long {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field foC type long {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field t type long {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field kS type int {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field v type string {
+           indexing: summary | attribute
+           attribute: fast-search
+        }
+        field mTp type int {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field g type byte {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field m type string {
+            indexing: summary | index | attribute
+            attribute: fast-search
+        }
+        field ln type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field l type location {
+            indexing: summary
+        }
+        field t_e type entity {
+            indexing: summary
+        }
+        field mD type array<media> {
+            indexing: summary
+        }
+        field e_u type array<expandedurls> {
+            indexing: summary
+        }
+
+        field n_c_p type array<string> {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field n_s_p type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field n_s_pM type long {
+            indexing: summary
+        }
+        field n_s_s type double {
+            indexing: summary
+        }
+        field n_s_eId type string {
+            indexing: summary
+        }
+        field n_s_e type array<sentimententity> {
+            indexing: summary
+        }
+        field n_tA_c type array<string> {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field n_tA_tC type array<string> {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field n_tA_s type array<string> {
+            indexing: summary | index | attribute
+            attribute: fast-search
+        }
+        field n_cM_sC type byte {
+            indexing: summary
+        }
+        field n_cM_e type byte {
+            indexing: summary
+        }
+        field n_cM_aR type byte {
+            indexing: summary
+        }
+        field n_cM_cN type array<int> {
+            indexing: summary
+        }
+        field n_cM_eT type byte {
+            indexing: summary
+        }
+        field n_cM_gO type array<int> {
+            indexing: summary
+        }
+
+        field add_qsId type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_qsM type string {
+           indexing: summary | index | attribute
+           attribute: fast-search
+        }
+        field add_obtId type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_obUId type long {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_obUSN type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_nTuI type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_nTpL type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_domain type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_category type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_topics type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_t type string {
+            indexing: summary | index | attribute
+            attribute: fast-search
+        }
+        field add_fId type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_fName type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_fUrl type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_secUrl type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_secName type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_tId type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_tLink type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_rUrl type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_nw_cat_name type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_licensed type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_sQK type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_moUrl type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_pTitle type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_guid type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_pLink type string {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field add_gsOrd type long {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+
+        field sT_rpC type long {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field sT_rtC type long {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field sT_rC type long {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field sT_fC type long {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field sT_qC type long {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field sT_dlC type long {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field sT_vC type long {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field sT_r type float {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+        field sT_lAT type long {
+            indexing: summary | attribute
+            attribute: fast-search
+        }
+
+        compression {
+        }
+    }
+
+    fieldset default {
+        fields: m
+    }
+
+    rank-profile post inherits default {
+        first-phase {
+            expression:nativeRank(m)
+        }
+    }
+}
