@@ -1,0 +1,126 @@
+//YQL: select * from sources * where (sddocname contains ([{"implicitTransforms": false}]"tweet")) limit 0 | all(group(n_tA_c) max(10) each(output(count() as(count))));
+//curl 'http://localhost:8080/search/?yql=select%20*%20from%20sources%20*%20where%20(sddocname%20contains%20(%5B%7B%22implicitTransforms%22%3A%20false%7D%5D%22tweet%22))%20limit%200%20%7C%20all(group(n_tA_c)%20max(10)%20each(output(count()%20as(count))))%3B&ranking=unranked' | python -m json.tool
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1234  100  1234    0     0     61      0  0:00:20  0:00:20 --:--:--   309
+
+// Timeout after 20 secs!
+
+{
+    "root": {
+        "children": [
+            {
+                "children": [
+                    {
+                        "children": [
+                            {
+                                "fields": {
+                                    "count": 0
+                                },
+                                "id": "group:string:people",
+                                "relevance": 0.0,
+                                "value": "people"
+                            },
+                            {
+                                "fields": {
+                                    "count": 0
+                                },
+                                "id": "group:string:resolution",
+                                "relevance": 0.0,
+                                "value": "resolution"
+                            },
+                            {
+                                "fields": {
+                                    "count": 0
+                                },
+                                "id": "group:string:rice",
+                                "relevance": 0.0,
+                                "value": "rice"
+                            },
+                            {
+                                "fields": {
+                                    "count": 0
+                                },
+                                "id": "group:string:rings",
+                                "relevance": 0.0,
+                                "value": "rings"
+                            },
+                            {
+                                "fields": {
+                                    "count": 0
+                                },
+                                "id": "group:string:stick",
+                                "relevance": 0.0,
+                                "value": "stick"
+                            },
+                            {
+                                "fields": {
+                                    "count": 0
+                                },
+                                "id": "group:string:terror",
+                                "relevance": 0.0,
+                                "value": "terror"
+                            },
+                            {
+                                "fields": {
+                                    "count": 0
+                                },
+                                "id": "group:string:time",
+                                "relevance": 0.0,
+                                "value": "time"
+                            },
+                            {
+                                "fields": {
+                                    "count": 0
+                                },
+                                "id": "group:string:woo",
+                                "relevance": 0.0,
+                                "value": "woo"
+                            },
+                            {
+                                "fields": {
+                                    "count": 0
+                                },
+                                "id": "group:string:wspania\u0142ym",
+                                "relevance": 0.0,
+                                "value": "wspania\u0142ym"
+                            },
+                            {
+                                "fields": {
+                                    "count": 0
+                                },
+                                "id": "group:string:wszystkiego",
+                                "relevance": 0.0,
+                                "value": "wszystkiego"
+                            }
+                        ],
+                        "continuation": {
+                            "next": "BGAAABECBEBC"
+                        },
+                        "id": "grouplist:n_tA_c",
+                        "label": "n_tA_c",
+                        "relevance": 1.0
+                    }
+                ],
+                "continuation": {
+                    "this": ""
+                },
+                "id": "group:root:0",
+                "relevance": 1.0
+            }
+        ],
+        "errors": [
+            {
+                "code": 12,
+                "message": "Timeout while waiting for sc0.num0",
+                "source": "content-root-cluster",
+                "summary": "Timed out"
+            }
+        ],
+        "fields": {
+            "totalCount": 0
+        },
+        "id": "toplevel",
+        "relevance": 1.0
+    }
+}
