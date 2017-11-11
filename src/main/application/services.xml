@@ -60,8 +60,17 @@
     <group/>
     -->
 
-    <engine>
+     <engine>
       <proton>
+        <tuning>
+          <searchnode>
+            <requestthreads>
+              <search>64</search>
+              <persearch>16</persearch>
+              <summary>16</summary>
+            </requestthreads>
+          </searchnode>
+        </tuning>
         <searchable-copies>2</searchable-copies>
         <flush-on-shutdown>true</flush-on-shutdown>
       </proton>
